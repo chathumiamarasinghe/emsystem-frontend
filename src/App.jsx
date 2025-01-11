@@ -1,7 +1,8 @@
 import './App.css'
+import FooterComponent from './components/FooterComponent';
 import HeaderComponent from './components/HeaderComponent';
 import ListEmployeeComponent from './components/ListEmployeeComponent';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
@@ -9,9 +10,16 @@ function App() {
 
   return (
     <>
-
+    <BrowserRouter>
       <HeaderComponent/> 
-      <ListEmployeeComponent/>
+      <Routes>
+      {/* // http:localhost:3000 */}
+      <Route path='/' element = { <ListEmployeeComponent />}></Route>
+      {/* // http://localhost:3000/employees */}
+      <Route path='/employees' element = { <ListEmployeeComponent />}></Route>
+      </Routes>
+      <FooterComponent/>
+      </BrowserRouter>
     </>
   )
 }
