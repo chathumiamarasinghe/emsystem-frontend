@@ -40,10 +40,11 @@ const ListEmployeeComponent = () => {
    }
 
   return (
+    <div className="background-container">
     <div className="container py-4">
             <div className="row mb-4">
                 <div className="col-md-6">
-                    <h2 className="fw-bold text-primary">Employee Management</h2>
+                    <h2 className="fw-bold text-primary">Employee Management System</h2>
                 </div>
                 <div className="col-md-6 text-end">
                     <button className="btn btn-success btn-lg" onClick={addNewEmployee}>
@@ -95,6 +96,7 @@ const ListEmployeeComponent = () => {
                 </table>
             </div>
         </div>
+    </div>    
   )
 }
 
