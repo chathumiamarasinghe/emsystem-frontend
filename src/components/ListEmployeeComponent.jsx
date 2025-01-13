@@ -40,7 +40,7 @@ const ListEmployeeComponent = () => {
    }
 
   return (
-    <div className="background-container">
+    
     <div className="container py-4">
             <div className="row mb-4">
                 <div className="col-md-6">
@@ -96,7 +96,7 @@ const ListEmployeeComponent = () => {
                 </table>
             </div>
         </div>
-    </div>    
+        
   )
 }
 
